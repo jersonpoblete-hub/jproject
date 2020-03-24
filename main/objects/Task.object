@@ -118,7 +118,14 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>Task_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Task_Compact_Layout</fullName>
+        <fields>Subject</fields>
+        <fields>WhatId</fields>
+        <fields>Status</fields>
+        <label>Task Compact Layout</label>
+    </compactLayouts>
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>ActivityDate</fullName>
