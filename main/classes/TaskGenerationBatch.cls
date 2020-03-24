@@ -15,8 +15,8 @@ global class TaskGenerationBatch implements Database.Batchable<sObject> {
     global void execute(Database.BatchableContext bc, List<sObject> scope){
         Map<Id, List<Task>> accountTaskMap = new Map<Id, List<Task>>();
         List<Task> taskList = new List<Task>(); 
-        //Datetime dateLastweek = System.today().AddDays(-7);
-        Datetime dateLastweek = System.Now().addHours(-2); //for testing
+        Datetime dateLastweek = System.today().AddDays(-7);
+        //Datetime dateLastweek = System.Now().addHours(-2); //for testing
         Set<Id> taskIds = new Set<Id>();
         Map<String, TaskMatrix__mdt> taskMatrixMap = new Map<String, TaskMatrix__mdt>();
         List<TaskMatrix__mdt> tasjMatrixList = [SELECT DeveloperName, WeekNum__c, Topic__c, Task_Name__c, Task_Description__c FROM TaskMatrix__mdt];
